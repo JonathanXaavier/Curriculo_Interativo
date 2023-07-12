@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jonathan Xavier</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jonathan Xavier</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#Formação e Experiência">Formação e Experiência</a></li>
+            <li><a href="#Habilidades e Idiomas">Habilidades e Idiomas</a></li>
+            <li><a href="#Cursos Extracurriculares">Cursos Extracurriculares</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <nav id="hamburger-nav">
+        <div class="logo">Jonathan Xavier</div>
+            <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#Sobre" onclick="toggleMenu()">Sobre</a></li>
+            <li><a href="#Formação e Experiência" onclick="toggleMenu()">Formação e Experiência</a></li>
+            <li><a href="#Habilidades e Idiomas" onclick="toggleMenu()">Habilidades e Idiomas</a></li>
+            <li><a href="#Cursos Extracurriculares" onclick="toggleMenu()">Cursos Extracurriculares</a></li>
+          </div>
+
+
+          <section id="profile">
+            <div class="section__pic-container">
+              <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+            </div>
+            <div class="section__text">
+              <p class="section__text__p1">Olá, eu sou </p>
+              <h1 class="title">Jonathan Xavier</h1>
+              <p class="section__text__p2">Estudante de Análise e Desenvolvimento de Sistemas</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2"
+                  onclick="window.open('./assets/resume-example.pdf')"
+                >
+                  Baixar CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                  Contato
+                </button>
+              </div>
+              <div id="socials-container">
+                <img
+                  src="Imagens/linkedin.png"
+                  alt="Meu Perfil no Linkedin"
+                  class="icon"
+                  onclick="location.href='https://linkedin.com/in/jonathan-xavier-b46205195'"
+                />
+                <img
+                  src="Imagens/github.png"
+                  alt="My Github profile"
+                  class="icon"
+                  onclick="location.href='https://github.com/https://github.com/JonathanXaavier'"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </nav>
+</body>
+</html>
