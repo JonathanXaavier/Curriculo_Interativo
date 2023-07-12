@@ -4,6 +4,11 @@
     padding: 0;
     margin: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -13,17 +18,101 @@ header{
     margin: 15px;
 }
 nav a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin: 15px;
     text-transform: uppercase;
     font-size: 0.9rem;
-    transition: 0.5s;
+    transition: 0.9s;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
 }
 nav a:hover{
-    background-color: rgb(0, 17, 255);
-    padding: 5px;
+    text-decoration: underline;
+}
+.inicio{
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #000000;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+    padding-bottom: 20px;
+}
+.inicio .contenido-banner h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 43px;
+    height: 43px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+    background-color: #ffffff;
+}
+.inicio .contenido-banner .redes a:hover{
+    padding: 10px;
+}
+.git{
+    width: 40px;
+    height: 40px;
+}
+.linkedin{
+    width: 40px;
+    height: 40px;
+}
+button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fcfcfca4;
+    z-index: -1;
+    transition: 1s;
+}
+button:hover .overlay{
+    width: 100%;
 }
