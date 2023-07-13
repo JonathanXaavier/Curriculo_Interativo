@@ -36,6 +36,7 @@ nav a:hover{
     color: #fff;
     display: flex;
     align-items: center;
+    margin-bottom: 150px;
 }
 .inicio .contenido-banner{
     padding: 20px;
@@ -102,6 +103,7 @@ button{
     color: #fff;
     position: relative;
     z-index: 10;
+    text-decoration: none;
 }
 button .overlay{
     position: absolute;
@@ -112,6 +114,10 @@ button .overlay{
     background-color: #fcfcfca4;
     z-index: -1;
     transition: 1s;
+    text-decoration: none;
+}
+.link-botao{
+    text-decoration: none;
 }
 button:hover .overlay{
     width: 100%;
