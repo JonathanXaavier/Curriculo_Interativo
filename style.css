@@ -160,3 +160,21 @@ footer{
     padding: 30px;
     font-size: 20px;
 }
+#numero{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media(max-width:798px){
+
+    nav.menu-inicio{
+        display: none;
+    }
+
+    #titulo{
+        text-align: center;
+        margin: auto;
+    }
+
+}
