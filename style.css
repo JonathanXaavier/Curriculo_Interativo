@@ -160,11 +160,6 @@ footer{
     padding: 30px;
     font-size: 20px;
 }
-#numero{
-    text-decoration: none;
-    color: white;
-}
-
 
 @media(max-width:798px){
 
@@ -175,6 +170,11 @@ footer{
     #titulo{
         text-align: center;
         margin: auto;
+    }
+
+    #numero{
+        text-decoration: none;
+        color: white;
     }
 
 }
